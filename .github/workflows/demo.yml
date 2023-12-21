@@ -20,3 +20,11 @@ jobs:
          name: jmeter-results
          path: result.jtl
          if-no-files-found: error
+         
+      - name: Upload HTML Reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: jmeter-html-reports
+          path: Report
+          if-no-files-found: error
+         
