@@ -13,7 +13,7 @@ jobs:
         uses: ./
         with:
           test-plan-path: ./blazedemo.jmx
-          args: "-e -o ./reports/html/"
+          args: "-e -o ./Report/"
       - name: Upload Results
         uses: actions/upload-artifact@v3
         with:
